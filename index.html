@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+
+    <style>
+        .center-align {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            width: 25%;
+            height: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center-align">name: CI/CD Workflow
+
+        on: [push]
+        
+        jobs:
+          build:
+            runs-on: ubuntu-latest
+        
+            steps:
+            - name: Check out code
+              uses: actions/checkout@v2
+        
+            - name: Run a command
+              run: echo "Hello, GitHub!"
+        <img src="./public/img/person/self.JPG" alt="Person Image" title="Basanta Shrestha" />
+
+        <strong style="font-size: 25px;">Basanta Shrestha</strong>
+
+        <ul class="list">
+            <li><a href="#">Lab0: This HomePage</a></li>
+            <li><a href="./lab2/index.html">Lab2: About Me</a></li>
+            <li><a href="#">Homework 1</a></li>
+            <li><a href="#">Homework 2</a></li>
+            <li><a href="#">Homework 3</a></li>
+        </ul>
+
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fsameerstha0012.github.io%2Fmiu-wap_lab%2Flab1%2F">
+            <img src="./public/img/icon/htmlchecker.png" alt="HTML Validator Image" title="HTML Checker" />
+        </a>
+    </div>
+
+
+</body>
+
+</html>
