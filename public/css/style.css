@@ -1,0 +1,35 @@
+body {
+    font-family: Courier New, Verdana, Trebuchet;
+}
+
+#lab-2-body {
+    background-color: black;
+}
+
+.center-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+}
+
+.icon {
+    width: 150px;
+    height: 50px;
+}
+
+h1 {
+    color: blue;
+}
+
+h3 {
+    color: burlywood
+}
+
+a {
+    color: red;
+}
