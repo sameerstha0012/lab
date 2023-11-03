@@ -40,6 +40,16 @@ a {
     color: yellow;
 }
 
+.danger-text {
+    color: red;
+}
+
+.transparent_select {
+    background: transparent;
+    border: none;
+}
+
+/* --------------------- Lab2 Layout ----------------------- */
 .layout_container {
     border: 4px solid black;
 }
@@ -62,6 +72,9 @@ a {
     justify-content: space-between;
 }
 
+/* --------------------- /Lab2 Layout ----------------------- */
+
+/* ------------------------- Table Using Flexbox ------------------------- */
 .table {
     border: 2px solid black;
 }
@@ -78,6 +91,8 @@ a {
     width: 200px;
 }
 
+/* ------------------------- /Table Using Flexbox ------------------------- */
+
 .inline_property {
     display: flex;
     justify-content: center;
@@ -90,4 +105,53 @@ a {
 .float_right {
     display: flex;
     flex-direction: row-reverse;
+}
+
+/* ----------------------------Form -------------------------------- */
+.form-textarea {
+    width: 100%;
+    height: 60px;
+}
+
+.form-inline {
+    display: flex;
+}
+
+.form_label {
+    font-weight: bold;
+    width: 45%;
+    word-wrap: break-word;
+}
+
+.form_input {
+    width: 50%;
+}
+
+.form-inline {
+    margin-bottom: 1em;
+}
+
+.form-title {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* ---------------------------- /Form -------------------------------- */
+
+.regitration_container {
+    border: 2px solid green;
+}
+
+.registration_head {
+    background-color: rgb(149, 196, 149);
+}
+
+.registration_body {
+    padding: 8px;
+}
+
+.registration_footer {
+    padding: 8px;
+    background-color: rgb(187, 176, 176);
+    text-align: center;
 }
