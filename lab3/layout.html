@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="./../public/css/style.css">
+    <link rel="stylesheet" href="./../public/fontawesome/css/all.css">
+</head>
+
+<body>
+    <div class="layout_container">
+        <div class="container_head">
+            <nav class="layout_nav">
+                <ul>Logo</ul>
+                <ul>
+                    <h1>Welcome, Basanta</h1>
+                </ul>
+                <ul><button>Logout</button></ul>
+            </nav>
+        </div>
+
+        <div class="container_body">
+            <h3>Product List</h3>
+
+            <div class="product_list table">
+
+                <div class="product_title row">
+                    <span class="product_name_title cell">Name</span>
+                    <span class="product_price_title cell">Price</span>
+                    <span class="product_stock_title cell">Stock</span>
+                    <span class="product_action_title cell">Action</span>
+                </div>
+
+                <div class="product_sample1 row">
+                    <span class="product_name cell">Node.js</span>
+                    <span class="product_price cell">9.99</span>
+                    <span class="product_stock cell">8</span>
+                    <span class="product_action cell"><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+
+                <div class="product_sample2 row">
+                    <span class="product_name cell">React</span>
+                    <span class="product_price cell">19.99</span>
+                    <span class="product_stock cell">15</span>
+                    <span class="product_action cell"><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+
+                <div class="product_sample3 row">
+                    <span class="product_name cell">Angular</span>
+                    <span class="product_price cell">29.99</span>
+                    <span class="product_stock cell">13</span>
+                    <span class="product_action cell"><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+
+            </div>
+
+            <h3>Your Shopping Cart</h3>
+
+            <div class="cart_list table">
+
+                <div class="cart_title row">
+                    <span class="cart_name_title cell">Name</span>
+                    <span class="cart_price_title cell">Price</span>
+                    <span class="cart_total_title cell">Total</span>
+                    <span class="cart_quantity_title cell">Quantity</span>
+                </div>
+
+                <div class="cart_sample1 row">
+                    <span class="cart_name cell">Node.js</span>
+                    <span class="cart_price cell">9.99</span>
+                    <span class="cart_total cell">8</span>
+                    <span class="cart_quantity cell inline_property">
+                        <button name="subtract">-</button>
+                        <input class="num_input_width" type="number" name="quantity" value="1">
+                        <button name="add">+</button>
+                    </span>
+                </div>
+
+                <div class="cart_sample3 row">
+                    <span class="cart_name cell">Angular</span>
+                    <span class="cart_price cell">29.99</span>
+                    <span class="cart_total cell">13</span>
+                    <span class="cart_quantity cell inline_property">
+                        <button name="subtract">-</button>
+                        <input class="num_input_width" type="number" name="quantity" value="1">
+                        <button name="add">+</button>
+                    </span>
+                </div>
+                <span class="float_right">Total: 3999.12</span>
+            </div>
+            <br>
+
+            <div class="float_right">
+                <button class="">Place Order</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
