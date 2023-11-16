@@ -3,9 +3,19 @@
 Answer:
 There are 6 Callbacks queues in Node.js:
 
-1. Timers
-2. Pending Callbacks
-3. Idle, prepare
-4. Poll
-5. Check
-6. Close Callbacks
+
+
+1. Nexttick Queue: process.nextTick
+2. Promise Queue: Promise
+3. Timer: setTimeout, setInterval
+4. I/O: fs.readFile, fs.writeFile
+5. Polling: fs.readFile, fs.writeFile
+6. Check: setImmediate
+7. Close: readableStream.on("close", () => {});
+
+// 1. Timers
+// 2. Pending Callbacks
+// 3. Idle, prepare
+// 4. Poll
+// 5. Check
+// 6. Close Callbacks
