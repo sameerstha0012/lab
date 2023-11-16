@@ -1,0 +1,11 @@
+1. How many callbacks queues in Node.js and what are they? Give examples to explain how different callbacks are enqueued in different queues.
+
+Answer:
+There are 6 Callbacks queues in Node.js:
+
+1. Timers
+2. Pending Callbacks
+3. Idle, prepare
+4. Poll
+5. Check
+6. Close Callbacks

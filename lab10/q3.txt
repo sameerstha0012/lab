@@ -1,0 +1,38 @@
+3. What's the output of the code below? Try to understand how it works as we explained in the class.
+
+const fs = require('fs');
+
+
+fs.readFile('hello.txt', () => {
+
+    console.log('readFile....');
+
+});
+
+setTimeout(() => console.log('timeout'), 0);
+
+setImmediate(() => console.log('Immediate'));
+
+Answer:
+
+Console Output:
+
+If, readFile does not takes time and timeout is 0:
+readFile....
+timeout
+Immediate
+
+If, readFile does not takes time and timeout is > 0:
+readFile....
+Immediate
+timeout
+
+If, readFile takes time and timeout is > 0:
+Immediate
+timeout
+readFile....
+
+If, readFile takes time and timeout is 0:
+timeout
+Immediate
+readFile....

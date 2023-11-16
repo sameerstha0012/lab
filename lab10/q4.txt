@@ -1,0 +1,18 @@
+4. What's the output of the code below when running in Node.js? If for the same code running in browser, what's the output? Why is the output different?
+
+var message = 'Hello World';
+
+function logMessage() {
+
+    console.log(this.message);
+
+}
+
+logMessage();
+
+Answer:
+
+Output by Browser: 'Hello World' // message become property of global object and is accessible inside function
+Output by Node.js: undefined // In Node.js, variable declared does not has global scope: gives module scope
+                                and this inside function refers to the global object
+                                so global does not have message property and results in undefined
