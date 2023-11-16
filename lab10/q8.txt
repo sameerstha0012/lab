@@ -24,5 +24,13 @@ const result = (function(exports, module){
 
 console.log(result);
 
+
 Answer:
 
+Step1: exports = null, module.exports = {}
+Step2: exports = {}, module.exports = {}
+Step3: exports = {firstname: 'John'}, module.exports = { firstname: 'John' }
+Step3: exports = {firstname: 'John',lastname = 'Smith'}, module.exports = {firstname: 'John',lastname = 'Smith'}
+Step3: exports = {getFullName: fn}, module.exports = {firstname: 'John',lastname = 'Smith'}
+
+Console Output = {firstname: 'John',lastname = 'Smith'}
