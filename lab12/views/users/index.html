@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Userr</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script src="/js/main.js"></script>
 </head>
+
 <body>
-    <h1>hello users</h1>
+    <h1>Hello Users</h1>
+
+    <h3>Fill your Form:</h3>
+    <form action="/users" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+
+        <label for="age">Age:</label>
+        <input type="number" name="age">
+
+        <button>Submit</button>
+    </form>
 </body>
+
 </html>
